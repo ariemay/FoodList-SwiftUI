@@ -11,6 +11,8 @@
 		8D6AB60924A8240400C97EDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6AB60824A8240400C97EDB /* ContentView.swift */; };
 		8D6AB60B24A8240600C97EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6AB60A24A8240600C97EDB /* Assets.xcassets */; };
 		8D6AB60E24A8240600C97EDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6AB60D24A8240600C97EDB /* Preview Assets.xcassets */; };
+		8D6AB61A24A8250900C97EDB /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6AB61924A8250900C97EDB /* Foods.swift */; };
+		8D6AB61C24A82D8A00C97EDB /* FoodDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6AB61B24A82D8A00C97EDB /* FoodDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		8D6AB60A24A8240600C97EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D6AB60D24A8240600C97EDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D6AB60F24A8240600C97EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D6AB61924A8250900C97EDB /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
+		8D6AB61B24A82D8A00C97EDB /* FoodDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				8D6AB60624A8240400C97EDB /* SwiftUI_FoodListApp.swift */,
 				8D6AB60824A8240400C97EDB /* ContentView.swift */,
+				8D6AB61B24A82D8A00C97EDB /* FoodDetails.swift */,
+				8D6AB61924A8250900C97EDB /* Foods.swift */,
 				8D6AB60A24A8240600C97EDB /* Assets.xcassets */,
 				8D6AB60F24A8240600C97EDB /* Info.plist */,
 				8D6AB60C24A8240600C97EDB /* Preview Content */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6AB61A24A8250900C97EDB /* Foods.swift in Sources */,
 				8D6AB60924A8240400C97EDB /* ContentView.swift in Sources */,
+				8D6AB61C24A82D8A00C97EDB /* FoodDetails.swift in Sources */,
 				8D6AB60724A8240400C97EDB /* SwiftUI_FoodListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
