@@ -12,19 +12,46 @@ struct FoodDetails: View {
     @State private var zoomed = false
     
     var body: some View {
-        Image(food.imageName)
-            .resizable()
-            .aspectRatio(contentMode: zoomed ? .fill : .fit)
-            .navigationTitle(food.name)
-            .onTapGesture {
-                zoomed.toggle()
-            }
+        VStack {
+            Spacer(minLength: 0)
+            Image(food.imageName)
+                .resizable()
+                .aspectRatio(contentMode: zoomed ? .fill : .fit)
+                .onTapGesture {
+                    withAnimation{
+                        zoomed.toggle()
+                    }
+                }
+            Spacer(minLength: 0)
             
+            if food.isSpicy && !zoomed {
+                HStack {
+                    Spacer()
+                    Label("Spicy", systemImage: "flame.fill")
+                    Spacer()
+                }
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .font(Font.headline.smallCaps())
+                .background(Color.red)
+                .foregroundColor(.yellow)
+                .transition(.move(edge: .bottom))
+            }
+        }
+        .navigationTitle(food.name)
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
 
 struct FoodDetails_Previews: PreviewProvider {
     static var previews: some View {
-        FoodDetails(food: testData[0])
+        Group {
+            NavigationView {
+                FoodDetails(food: testData[0])
+            }
+            NavigationView {
+                FoodDetails(food: testData[1])
+            }
+        }
+        
     }
 }
